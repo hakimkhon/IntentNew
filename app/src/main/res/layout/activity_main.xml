@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <TextView
+            android:layout_centerHorizontal="true"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="O'zbekistonda ishlab chiqarilgan automobillar"
+            style="@style/BodyTextStyle"/>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardview_jentra"
+            android:onClick="cardView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.2"
+            app:cardUseCompatPadding="true"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="4dp">
+            <RelativeLayout
+                android:id="@+id/container_jentra"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/img_jentra"
+                    android:layout_width="100dp"
+                    android:scaleType="centerInside"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/gentra"
+                    />
+
+                <TextView
+                    android:id="@+id/textview_title_jentra"
+                    android:layout_toEndOf="@id/img_jentra"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Jentra"
+                    style="@style/titleStyle"/>
+
+                <TextView
+                    android:id="@+id/textview_discreption_jentra"
+                    android:layout_below="@id/textview_title_jentra"
+                    android:layout_toEndOf="@id/img_jentra"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Avtomobilning tashqi ko‘rinishini italiyalik mutaxassislar yaratgani tufayli, u juda kuchli taassurot tug‘diradi. Bu modelning asosiy xususiyati silliq, dumaloqlashuvchi chiziqlardir, ular tufayli mashina aslidagi holatiga nisbatan ancha kattaroq va keng hajmli bo‘lib ko‘rinadi. Bunda, uning tashqi ko‘rinishi ancha qimmat toifadagi avtomobillarga xos bo‘lgan jo‘shqinlik va ulug‘vorlik bor. Tashqi ko‘rinishining barcha detallari, 15-dyuymli disklardan tortib yon oynalarining o‘ziga xos shakligacha, a’lo sifati va Italiyaga xos nafisligi bilan ajralib turadi."
+                    style="@style/discreptionStyle"
+                    />
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardview_malibu"
+            android:onClick="cardView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.2"
+            app:cardUseCompatPadding="true"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="4dp">
+            <RelativeLayout
+                android:id="@+id/container_malibu"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/img_malibu"
+                    android:layout_width="100dp"
+                    android:scaleType="centerCrop"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/malibu"
+                    />
+
+                <TextView
+                    android:id="@+id/textview_title_malibu"
+                    android:layout_toEndOf="@id/img_malibu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Malibu"
+                    style="@style/titleStyle"/>
+
+                <TextView
+                    android:id="@+id/textview_discreption_malibu"
+                    android:layout_below="@id/textview_title_malibu"
+                    android:layout_toEndOf="@id/img_malibu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Avtomobilning tashqi ko‘rinishini italiyalik mutaxassislar yaratgani tufayli, u juda kuchli taassurot tug‘diradi. Bu modelning asosiy xususiyati silliq, dumaloqlashuvchi chiziqlardir, ular tufayli mashina aslidagi holatiga nisbatan ancha kattaroq va keng hajmli bo‘lib ko‘rinadi. Bunda, uning tashqi ko‘rinishi ancha qimmat toifadagi avtomobillarga xos bo‘lgan jo‘shqinlik va ulug‘vorlik bor. Tashqi ko‘rinishining barcha detallari, 15-dyuymli disklardan tortib yon oynalarining o‘ziga xos shakligacha, a’lo sifati va Italiyaga xos nafisligi bilan ajralib turadi."
+                    style="@style/discreptionStyle"
+                    />
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardview_cobalt"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.2"
+            app:cardUseCompatPadding="true"
+            app:cardCornerRadius="8dp"
+            android:onClick="cardView"
+            app:cardElevation="4dp">
+            <RelativeLayout
+                android:id="@+id/container_cobalt"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/img_cobalt"
+                    android:layout_width="100dp"
+                    android:scaleType="fitCenter"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/cobalt"
+                    />
+
+                <TextView
+                    android:id="@+id/textview_title_cobalt"
+                    android:layout_toEndOf="@id/img_cobalt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cobalt"
+                    style="@style/titleStyle"/>
+
+                <TextView
+                    android:id="@+id/textview_discreption_cobalt"
+                    android:layout_below="@id/textview_title_cobalt"
+                    android:layout_toEndOf="@id/img_cobalt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Avtomobilning tashqi ko‘rinishini italiyalik mutaxassislar yaratgani tufayli, u juda kuchli taassurot tug‘diradi. Bu modelning asosiy xususiyati silliq, dumaloqlashuvchi chiziqlardir, ular tufayli mashina aslidagi holatiga nisbatan ancha kattaroq va keng hajmli bo‘lib ko‘rinadi. Bunda, uning tashqi ko‘rinishi ancha qimmat toifadagi avtomobillarga xos bo‘lgan jo‘shqinlik va ulug‘vorlik bor. Tashqi ko‘rinishining barcha detallari, 15-dyuymli disklardan tortib yon oynalarining o‘ziga xos shakligacha, a’lo sifati va Italiyaga xos nafisligi bilan ajralib turadi."
+                    style="@style/discreptionStyle"
+                    />
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardview_nexia"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.2"
+            app:cardUseCompatPadding="true"
+            app:cardCornerRadius="8dp"
+            android:onClick="cardView"
+            app:cardElevation="4dp">
+            <RelativeLayout
+                android:id="@+id/container_nexia"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/img_nexia"
+                    android:layout_width="100dp"
+                    android:scaleType="centerCrop"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/nexia"
+                    />
+
+                <TextView
+                    android:id="@+id/textview_title_nexia"
+                    android:layout_toEndOf="@id/img_nexia"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nexia"
+                    style="@style/titleStyle"/>
+
+                <TextView
+                    android:id="@+id/textview_discreption_nexia"
+                    android:layout_below="@id/textview_title_nexia"
+                    android:layout_toEndOf="@id/img_nexia"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Avtomobilning tashqi ko‘rinishini italiyalik mutaxassislar yaratgani tufayli, u juda kuchli taassurot tug‘diradi. Bu modelning asosiy xususiyati silliq, dumaloqlashuvchi chiziqlardir, ular tufayli mashina aslidagi holatiga nisbatan ancha kattaroq va keng hajmli bo‘lib ko‘rinadi. Bunda, uning tashqi ko‘rinishi ancha qimmat toifadagi avtomobillarga xos bo‘lgan jo‘shqinlik va ulug‘vorlik bor. Tashqi ko‘rinishining barcha detallari, 15-dyuymli disklardan tortib yon oynalarining o‘ziga xos shakligacha, a’lo sifati va Italiyaga xos nafisligi bilan ajralib turadi."
+                    style="@style/discreptionStyle"
+                    />
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardview_spark"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.2"
+            app:cardUseCompatPadding="true"
+            app:cardCornerRadius="8dp"
+            android:onClick="cardView"
+            app:cardElevation="4dp">
+            <RelativeLayout
+                android:id="@+id/container_spark"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/img_spark"
+                    android:layout_width="100dp"
+                    android:scaleType="centerCrop"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/spark"
+                    />
+
+                <TextView
+                    android:id="@+id/textview_title_spark"
+                    android:layout_toEndOf="@id/img_spark"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Spark"
+                    style="@style/titleStyle"/>
+
+                <TextView
+                    android:id="@+id/textview_discreption_spark"
+                    android:layout_below="@id/textview_title_spark"
+                    android:layout_toEndOf="@id/img_spark"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Avtomobilning tashqi ko‘rinishini italiyalik mutaxassislar yaratgani tufayli, u juda kuchli taassurot tug‘diradi. Bu modelning asosiy xususiyati silliq, dumaloqlashuvchi chiziqlardir, ular tufayli mashina aslidagi holatiga nisbatan ancha kattaroq va keng hajmli bo‘lib ko‘rinadi. Bunda, uning tashqi ko‘rinishi ancha qimmat toifadagi avtomobillarga xos bo‘lgan jo‘shqinlik va ulug‘vorlik bor. Tashqi ko‘rinishining barcha detallari, 15-dyuymli disklardan tortib yon oynalarining o‘ziga xos shakligacha, a’lo sifati va Italiyaga xos nafisligi bilan ajralib turadi."
+                    style="@style/discreptionStyle"
+                    />
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardview_damas"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.2"
+            app:cardUseCompatPadding="true"
+            app:cardCornerRadius="8dp"
+            android:onClick="cardView"
+            app:cardElevation="4dp">
+            <RelativeLayout
+                android:id="@+id/container_damas"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/img_damas"
+                    android:layout_width="100dp"
+                    android:scaleType="centerCrop"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/damas"
+                    />
+
+                <TextView
+                    android:id="@+id/textview_title_damas"
+                    android:layout_toEndOf="@id/img_damas"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Damas"
+                    style="@style/titleStyle"/>
+
+                <TextView
+                    android:id="@+id/textview_discreption_damas"
+                    android:layout_below="@id/textview_title_damas"
+                    android:layout_toEndOf="@id/img_damas"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Avtomobilning tashqi ko‘rinishini italiyalik mutaxassislar yaratgani tufayli, u juda kuchli taassurot tug‘diradi. Bu modelning asosiy xususiyati silliq, dumaloqlashuvchi chiziqlardir, ular tufayli mashina aslidagi holatiga nisbatan ancha kattaroq va keng hajmli bo‘lib ko‘rinadi. Bunda, uning tashqi ko‘rinishi ancha qimmat toifadagi avtomobillarga xos bo‘lgan jo‘shqinlik va ulug‘vorlik bor. Tashqi ko‘rinishining barcha detallari, 15-dyuymli disklardan tortib yon oynalarining o‘ziga xos shakligacha, a’lo sifati va Italiyaga xos nafisligi bilan ajralib turadi."
+                    style="@style/discreptionStyle"
+                    />
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>
